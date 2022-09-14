@@ -35,13 +35,13 @@
 //    @Override
 //    public UserDetails loadUserByUsername(String username) {
 //        // Kiểm tra xem user có tồn tại trong database không?
-//        User u = new User();
+//        DAOUser u = new DAOUser();
 //        if ("loda".equals(username)) {
-//            u = new User();
+//            u = new DAOUser();
 //            u.setUsername("loda");
 //            u.setPassword("loda");
 //        }
-////        User user = userRepository.findByUsername(username);
+////        DAOUser user = userRepository.findByUsername(username);
 //        if (u == null) {
 //            throw new UsernameNotFoundException(username);
 //        }
@@ -50,16 +50,16 @@
 //    }
 //
 //    public UserDetails loadUserById(Long userId) {
-//        User u = new User();
+//        DAOUser u = new DAOUser();
 //        if (userId.equals(1L)) {
-//            u = new User();
+//            u = new DAOUser();
 //            u.setUsername("loda");
 //            u.setPassword(passwordEncoder.encode("loda"));
 ////            return new CustomUserDetails(u);
 //            return null;
 //        }
 //
-////        Optional<User> user = userRepository.findById(userId);
+////        Optional<DAOUser> user = userRepository.findById(userId);
 ////        if (user.isPresent())
 //        return null;
 //    }
@@ -77,7 +77,7 @@
 //        // Set thông tin authentication vào Security Context
 //        SecurityContextHolder.getContext().setAuthentication(authentication);
 //        UserDetails userDetails =(UserDetails) authentication.getPrincipal();
-//        User domainUser = new User();
+//        DAOUser domainUser = new DAOUser();
 //        domainUser.setUsername(userDetails.getUsername());
 //        domainUser.setId(1L);
 //

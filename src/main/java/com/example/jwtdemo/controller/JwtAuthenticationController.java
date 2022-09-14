@@ -57,4 +57,10 @@ public class JwtAuthenticationController {
             throw new Exception("INVALID_CREDENTIALS", e);
         }
     }
+
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    public ResponseEntity<?> saveUser(@RequestBody LoginRequest user) throws Exception {
+        return ResponseEntity.ok(userDetailsService.save(user));
+    }
+
 }

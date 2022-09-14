@@ -14,7 +14,7 @@
 //@Data
 //@AllArgsConstructor
 //public class CustomUserDetails implements UserDetails {
-//    User user;
+//    DAOUser user;
 //    Set<GrantedAuthority> authorities=null;
 //
 //    public Collection<? extends GrantedAuthority> getAuthorities() {
