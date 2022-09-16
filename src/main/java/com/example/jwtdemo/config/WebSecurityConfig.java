@@ -62,6 +62,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/hellouser").hasAnyRole("USER","ADMIN")
                 // dont authenticate this particular request
                 .antMatchers("/authenticate", "/register").permitAll()
+                .antMatchers("/swagger-ui*/**", "/dotuyen-openapi/**").permitAll()
                 // all other requests need to be authenticated
                 .anyRequest().authenticated()
                 .and()
