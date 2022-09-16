@@ -13,8 +13,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorldController {
 
-    @RequestMapping({ "/hello" })
-    public String firstPage() {
-        return "Hello World";
+    @RequestMapping("/hellouser")
+    public String getUser()
+    {
+        return "Hello User";
+    }
+
+    @RequestMapping("/helloadmin")
+    public String getAdmin()
+    {
+        return "Hello Admin";
     }
 }
