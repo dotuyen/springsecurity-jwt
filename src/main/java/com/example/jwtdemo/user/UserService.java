@@ -1,6 +1,6 @@
 //package com.example.jwtdemo.user;
 //
-//import com.example.jwtdemo.jwt.JwtTokenProvider;
+//import com.example.jwtdemo.config.jwt.JwtTokenProvider;
 //import com.example.jwtdemo.payload.LoginRequest;
 //import com.fasterxml.jackson.databind.DeserializationFeature;
 //import com.fasterxml.jackson.databind.ObjectMapper;

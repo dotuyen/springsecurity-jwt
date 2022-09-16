@@ -4,7 +4,7 @@
 
 package com.example.jwtdemo.controller;
 
-import com.example.jwtdemo.jwt.JwtTokenUtil;
+import com.example.jwtdemo.config.jwt.JwtTokenUtil;
 import com.example.jwtdemo.payload.LoginRequest;
 import com.example.jwtdemo.payload.LoginResponse;
 import com.example.jwtdemo.user.JwtUserDetailsService;

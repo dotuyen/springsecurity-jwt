@@ -1,6 +1,11 @@
-package com.example.jwtdemo;
+/*
+ * Copyright (c) 2022.
+ */
 
-import com.example.jwtdemo.jwt.JwtRequestFilter;
+package com.example.jwtdemo.config;
+
+import com.example.jwtdemo.config.jwt.JwtAuthenticationEntryPoint;
+import com.example.jwtdemo.config.jwt.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

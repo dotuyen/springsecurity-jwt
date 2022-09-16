@@ -3,7 +3,7 @@
  * Copyright (c) 2022.
  */
 
-package com.example.jwtdemo.jwt;
+package com.example.jwtdemo.config.jwt;
 
 import io.jsonwebtoken.*;
 import org.springframework.beans.factory.annotation.Value;

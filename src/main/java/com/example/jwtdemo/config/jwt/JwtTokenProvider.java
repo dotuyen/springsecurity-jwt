@@ -1,4 +1,4 @@
-//package com.example.jwtdemo.jwt;
+//package com.example.jwtdemo.config.jwt;
 //
 //import java.util.Date;
 //

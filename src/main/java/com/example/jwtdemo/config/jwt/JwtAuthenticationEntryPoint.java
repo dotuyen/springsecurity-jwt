@@ -2,7 +2,7 @@
  * Copyright (c) 2022.
  */
 
-package com.example.jwtdemo;
+package com.example.jwtdemo.config.jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.MediaType;
@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.Collections;
 
 /**
