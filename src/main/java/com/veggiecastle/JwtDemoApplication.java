@@ -1,4 +1,4 @@
-package com.example.jwtdemo;
+package com.veggiecastle;
 
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.SecuritySchemeIn;

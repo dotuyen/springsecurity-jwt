@@ -2,12 +2,12 @@
  * Copyright (c) 2022.
  */
 
-package com.example.jwtdemo.controller;
+package com.veggiecastle.rest;
 
-import com.example.jwtdemo.config.jwt.JwtTokenUtil;
-import com.example.jwtdemo.payload.LoginRequest;
-import com.example.jwtdemo.payload.LoginResponse;
-import com.example.jwtdemo.user.JwtUserDetailsService;
+import com.veggiecastle.config.jwt.JwtTokenUtil;
+import com.veggiecastle.payload.LoginRequest;
+import com.veggiecastle.payload.LoginResponse;
+import com.veggiecastle.user.JwtUserDetailsService;
 import io.jsonwebtoken.impl.DefaultClaims;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,14 +23,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Expose a POST API /authenticate using the JwtAuthenticationController.
+ * Expose a POST API /authenticate using the JwtAuthenticationRest.
  * The POST API gets username and password in the body- Using Spring Authentication Manager we authenticate the username and password.
  * If the credentials are valid, a JWT token is created using the JWTTokenUtil and provided to the client.
  * @author Vinci
  */
 @RestController
 @CrossOrigin
-public class JwtAuthenticationController {
+public class JwtAuthenticationRest {
     @Autowired
     private AuthenticationManager authenticationManager;
 

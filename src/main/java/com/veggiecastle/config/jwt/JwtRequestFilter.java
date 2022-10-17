@@ -2,9 +2,9 @@
  * Copyright (c) 2022.
  */
 
-package com.example.jwtdemo.config.jwt;
+package com.veggiecastle.config.jwt;
 
-import com.example.jwtdemo.user.JwtUserDetailsService;
+import com.veggiecastle.user.JwtUserDetailsService;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;

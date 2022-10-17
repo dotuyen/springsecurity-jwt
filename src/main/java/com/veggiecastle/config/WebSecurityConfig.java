@@ -2,10 +2,10 @@
  * Copyright (c) 2022.
  */
 
-package com.example.jwtdemo.config;
+package com.veggiecastle.config;
 
-import com.example.jwtdemo.config.jwt.JwtAuthenticationEntryPoint;
-import com.example.jwtdemo.config.jwt.JwtRequestFilter;
+import com.veggiecastle.config.jwt.JwtAuthenticationEntryPoint;
+import com.veggiecastle.config.jwt.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -58,11 +58,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         // We don't need CSRF for this example
         httpSecurity.csrf().disable()
-                .authorizeRequests().antMatchers("/helloadmin").hasRole("ADMIN")
-                .antMatchers("/hellouser").hasAnyRole("USER","ADMIN")
+                .authorizeRequests()
+                .antMatchers("/public/api").permitAll()
+//                .antMatchers("/helloadmin").hasRole("ADMIN")
+//                .antMatchers("/hellouser").hasAnyRole("USER","ADMIN")
                 // dont authenticate this particular request
                 .antMatchers("/authenticate", "/register").permitAll()
-                .antMatchers("/swagger-ui*/**", "/dotuyen-openapi/**").permitAll()
+                .antMatchers("/swagger-ui*/**", "/veggie-castle-openapi/**").permitAll()
                 // all other requests need to be authenticated
                 .anyRequest().authenticated()
                 .and()

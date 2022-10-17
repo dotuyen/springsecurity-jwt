@@ -2,7 +2,7 @@
  * Copyright (c) 2022.
  */
 
-package com.example.jwtdemo.controller;
+package com.veggiecastle.rest;
 
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @SecurityRequirement(name = "dotuyen-api")
-public class HelloWorldController {
+public class HelloWorldRest {
 
     @RequestMapping("/hellouser")
     public String getUser()

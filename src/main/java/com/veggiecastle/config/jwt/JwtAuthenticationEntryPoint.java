@@ -2,7 +2,7 @@
  * Copyright (c) 2022.
  */
 
-package com.example.jwtdemo.config.jwt;
+package com.veggiecastle.config.jwt;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.MediaType;

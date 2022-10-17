@@ -1,4 +1,4 @@
-package com.example.jwtdemo.payload;
+package com.veggiecastle.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
